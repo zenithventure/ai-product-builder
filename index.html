@@ -71,8 +71,7 @@
             right: 0;
             z-index: 100;
             padding: 20px 0;
-            background: rgba(10, 10, 15, 0.8);
-            backdrop-filter: blur(20px);
+            background: #2c2940;
             border-bottom: 1px solid var(--border-color);
         }
 
@@ -80,6 +79,28 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+        }
+
+        .nav-left {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .zenith-logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            transition: opacity 0.2s;
+        }
+
+        .zenith-logo:hover {
+            opacity: 0.8;
+        }
+
+        .zenith-logo img {
+            height: 50px;
+            width: auto;
         }
 
         .logo {
@@ -858,6 +879,18 @@
                 display: none;
             }
 
+            .nav-left {
+                gap: 12px;
+            }
+
+            .zenith-logo img {
+                height: 38px;
+            }
+
+            .logo {
+                font-size: 1.1rem;
+            }
+
             .lab-box {
                 padding: 32px 24px;
             }
@@ -878,7 +911,12 @@
 
     <nav>
         <div class="container">
-            <div class="logo">AI Product Builder</div>
+            <div class="nav-left">
+                <a href="https://zenithstudio.io" class="zenith-logo" target="_blank" rel="noopener noreferrer">
+                    <img src="zenith_logo.png" alt="Zenith Venture Studio">
+                </a>
+                <div class="logo">AI Product Builder</div>
+            </div>
             <div class="nav-links">
                 <a href="#program">Program</a>
                 <a href="#curriculum">Curriculum</a>
